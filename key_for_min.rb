@@ -5,10 +5,13 @@ def key_for_min_value(name_hash)
   if name_hash.length == 0
     nil
   end
-  
-  name_hash.collect do |name, age|
-    if age == name_hash.min
-      name
+  counter = 1
+  while counter < name_hash.length
+    name_hash.collect do |name, age|
+      if age 
+        name
+      end
+      counter += 1
     end
   end
 end
